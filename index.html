@@ -336,58 +336,79 @@
 
   <section class="cinza-style forms">
     <form>
-      <fieldset>
-        <div>
-          <input type="radio" id="contactChoice1" name="contact" value="Say Hi" />
-          <label for="contactChoice1">Say Hi</label>
-          <input type="radio" id="contactChoice2" name="contact" value="Get a quote" />
-          <label for="contactChoice2">Get a quote</label>
-        </div>
+      <div>
+        <input type="radio" id="contactChoice1" name="contact" value="Say Hi" />
+        <label for="contactChoice1">Say Hi</label>
+        <input type="radio" id="contactChoice2" name="contact" value="Get a quote" />
+        <label for="contactChoice2">Get a quote</label>
+      </div>
 
-        <div class="campos">
-          <label for="contactName">Name</label>
-          <input type="text" id="contactName" name="contactName" placeholder="Name" />
-        </div>
+      <div class="campos">
+        <label for="contactName">Name</label>
+        <input type="text" id="contactName" name="contactName" placeholder="Name" />
+      </div>
 
-        <div class="campos">
+      <div class="campos">
 
-          <label for="contactEmail">Email*</label>
-          <input type="email" id="contactEmail" name="contactEmail" placeholder="Email" required / class="text">
-        </div>
-        <div class="campos">
+        <label for="contactEmail">Email*</label>
+        <input type="email" id="contactEmail" name="contactEmail" placeholder="Email" required>
+      </div>
+      <div class="campos">
 
-          <label for="contactMessage">Mensagem*</label>
-          <input type="text" id="contactMessage" name="contactMessage" placeholder="Message" required />
+        <label for="contactMessage">Mensagem*</label>
+        <textarea name="contactMessage" id="" rows="8" placeholder="Message"></textarea>
 
-        </div>
+      </div>
 
 
-        <div>
-          <button type="submit" class="btn">Send Message</button>
-        </div>
-      </fieldset>
+
+      <button type="submit" class="btn">Send Message</button>
+
+
     </form>
 
     <img src="/imgs/ilustracao-9.png" alt="" class="img-forms">
   </section>
 
   <footer>
+    <div class="teste">
+      <header class="text-white preto-style">
+        <img src="/imgs/Logo-Branco.svg" alt="" width="120">
+        <nav>
+          <ul class="list-nav">
+            <li>About us</li>
+            <li>Services</li>
+            <li>Use Cases</li>
+            <li>Pricing</li>
+            <li>Blog</li>
 
-    <header class="preto-style text-white">
-      <img src="/imgs/logo.svg" alt="">
-      <nav>
-        <ul class="list-nav">
-          <li>About us</li>
-          <li>Services</li>
-          <li>Use Cases</li>
-          <li>Pricing</li>
-          <li>Blog</li>
-          <li>Request a quote</li>
-
-        </ul>
-      </nav>
-    </header>
-
+          </ul>
+        </nav>
+        <div class="icon-flex">
+          <img src="/imgs/icon-linkedin-branco.svg" alt="">
+          <img src="/imgs/icon-facebook-branco.svg" alt="">
+          <img src="/imgs/icon-twitter-branco.svg" alt="">
+        </div>
+      </header>
+      <div class="text-white info-contato preto-style">
+        <address>
+          <h3>Contact Us:</h3>
+          <span>Email: <a href="info@positivus.com">info@positivus.com</a><br></span>
+          <span>Phone: 555-567-8901<br> </span>
+          <span>Address: 1234 Main St <br>
+            Moonstone City, Stardust State 12345 </span>
+        </address>
+        <form action="" class="form-footer">
+          <input type="email" name="" id="" placeholder="Email">
+          <button type="submit" class="btn">Subscribe to news</button>
+        </form>
+      </div>
+      <hr>
+      <div class="direitos-reservados">
+        <span>© 2023 Positivus. All Rights Reserved.</span>
+        <a href="">Privacy Policy</a>
+      </div>
+    </div>
   </footer>
 </body>
 

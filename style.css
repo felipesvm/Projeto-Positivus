@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 h1,
 h2,
@@ -13,7 +17,6 @@ ul {
 
 header {
   padding-top: 20px;
-  margin: 0 auto;
   width: 1000px;
   display: flex;
   gap: 150px;
@@ -52,6 +55,7 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   outline: none;
+  resize: none;
 }
 
 input[type="text"],
@@ -358,25 +362,34 @@ ul li:last-child {
   width: 1000px;
   margin: 50px auto 0 auto;
   position: relative;
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.forms form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .img-forms {
   position: absolute;
-  width: 200px;
-  top: 10px;
-  left: 600px;
+  height: 500px;
+  top: 70px;
+  left: 710px;
 }
 
 .campos {
-  display: grid;
-  grid-template-columns: 300px;
+  display: flex;
+  width: 500px;
+  flex-direction: column;
   gap: 5px;
 }
 
-fieldset {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+button[type="submit"] {
+  width: 500px;
+  height: 50px;
+  border-radius: 15px;
 }
 
 input[type="text"],
@@ -392,4 +405,102 @@ input[type="radio"] {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+
+textarea[name="contactMessage"] {
+  background: white;
+  width: 500px;
+  border-radius: 15px;
+  padding: 15px;
+  border: 2px solid #000;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 150px;
+  background: #292a32;
+  padding: 50px 25px;
+  border-radius: 15px;
+  border: 2px solid #b9ff66;
+}
+
+.form-footer button {
+  background: #b9ff66;
+  width: 200px;
+  height: 50px;
+  color: #191a23;
+  font-weight: 700;
+}
+
+.form-footer input {
+  background: #191a23;
+  border: 2px solid #fff;
+  width: 200px;
+  height: 50px;
+}
+
+.form-footer input::placeholder {
+  color: #fff;
+}
+
+.info-contato {
+  padding: 0px 40px 40px 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.info-contato address {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer header {
+  font-size: 14px;
+  padding: 40px;
+  gap: 0px;
+  justify-content: space-between;
+  text-decoration: underline;
+  border-radius: 20px 20px 0px 0px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+.direitos-reservados {
+  width: 1000px;
+  margin: 0 auto;
+  color: #fff;
+  background: #191a23;
+  padding: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+hr {
+  width: 920px;
+  margin: 0 auto;
+  background: #fff;
+  height: 2px;
+}
+
+.teste {
+  width: 1000px;
+  background: #191a23;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+address h3 {
+  background: #b9ff66;
+  color: #191a23;
+  padding: 8px;
+  border-radius: 6px;
+  width: max-content;
 }
